@@ -5,8 +5,8 @@ CREATE TABLE animals (
     create_time DATE, 
     name VARCHAR(225),
     date_of_birth DATE, 
-    escape_attamptes INTEGER, 
-    neutured BOOLEAN, 
+    escape_attempts INTEGER, 
+    neutered BOOLEAN, 
     weight_kg DECIMAL(5,2), 
     PRIMARY KEY(id)
 );
