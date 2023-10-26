@@ -35,4 +35,4 @@ ALTER TABLE animals
 ADD COLUMN species_id integer REFERENCES species(id); 
 
 ALTER TABLE animals
-ADD COLUMN owners_id integer REFERENCES owners(id); 
+ADD COLUMN owner_id integer REFERENCES owners(id); 
