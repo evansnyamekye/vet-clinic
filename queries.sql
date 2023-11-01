@@ -166,3 +166,32 @@ GROUP BY species.name
 ORDER BY visit_count DESC
 LIMIT 1;
 
+SELECT COUNT(visits.id) AS mismatched_specialty_count 
+FROM visits
+JOIN animals ON visits.animal_id = animals.id 
+JOIN vets ON visits.vet_id = vets.id
+LEFT JOIN specializations ON vets.id = specializations.vet_id AND animals.species_id = specializations.species_id
+WHERE specializations.vet_id is NULL; 
+
+SELECT species.name AS recommended_specialty, COUNT(visits.id) AS visit_count
+FROM visits
+    JOIN animals ON visits.animal_id = animals.id
+    JOIN species ON animals.species_id = species.id
+    JOIN vets ON visits.vet_id = vets.id
+WHERE vets.name = 'Masiy Smith'
+GROUP BY species.name
+ORDER BY visit_count DESC
+LIMIT 1;
+EXPLAIN
+ANALYZE
+SELECT COUNT(*)
+FROM visits
+where animal_id = 4;
+EXPLAIN ANALYZE
+SELECT *
+FROM visits
+where vet_id = 2;
+EXPLAIN ANALYZE
+SELECT *
+FROM owners
+where email = 'owner_18327@gmail.com';
