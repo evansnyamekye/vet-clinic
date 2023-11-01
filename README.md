@@ -79,6 +79,13 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - GitHub: [evansnyamekye](https://github.com/evansnyamekye)
 - Twitter: [@nyamekye2131](https://twitter.com/nyamekye2131)
 - LinkedIn: [Evans Kofi Nyamekye](https://www.linkedin.com/in/evans-kofi-nyamekye-1980a4117/)
+
+👤 **Edwin Gichuhi**
+
+- GitHub: [egichuhis](https://github.com/egichuhis)
+- Twitter: [@egichuhis](https://twitter.com/egichuhis)
+- LinkedIn: [Edwin Gichuhi](https://www.linkedin.com/in/edwin-gichuhi/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
