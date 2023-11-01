@@ -166,3 +166,10 @@ GROUP BY species.name
 ORDER BY visit_count DESC
 LIMIT 1;
 
+SELECT COUNT(visits.id) AS mismatched_specialty_count 
+FROM visits
+JOIN animals ON visits.animal_id = animals.id 
+JOIN vets ON visits.vet_id = vets.id
+LEFT JOIN specializations ON vets.id = specializations.vet_id AND animals.species_id = specializations.species_id
+WHERE specializations.vet_id is NULL; 
+
